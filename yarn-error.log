@@ -1,0 +1,52 @@
+Arguments: 
+  /home/jola/.nvm/versions/node/v12.4.0/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/jola/.nvm/versions/node/v12.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jola/.config/composer/vendor/bin:/home/jola/.composer/vendor/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.23.35:443 - Local (0.0.0.0:0)
+      at internalConnect (net.js:833:16)
+      at defaultTriggerAsyncIdScope (internal/async_hooks.js:301:12)
+      at emitLookup (net.js:976:9)
+      at /usr/share/yarn/lib/cli.js:107239:28
+      at /usr/share/yarn/lib/cli.js:107148:13
+      at RawTask.module.exports.RawTask.call (/usr/share/yarn/lib/cli.js:83456:19)
+      at flush (/usr/share/yarn/lib/cli.js:83538:29)
+      at processTicksAndRejections (internal/process/task_queues.js:82:9)
+
+npm manifest: 
+  {
+    "name": "commandeer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "node -r esm index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.19.0",
+      "cheerio": "^1.0.0-rc.3",
+      "commander": "^3.0.0",
+      "esm": "^3.2.25"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
